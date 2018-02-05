@@ -1,4 +1,5 @@
 # reseauSocialIoinc
 
-mail : objet : Cours Ionic Romain Galiay
-arret derniere partie d.
+##### _cours android M1_ 
+
+### __Partie I : Création et configuration du projet__
