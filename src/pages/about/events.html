@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Evènements
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let event of this.eventList">
+      <ion-segment-button (ionSelect)="openDetail(event)">
+        <ion-avatar ion-row>
+          <ion-icon [name]="initIcon(event.type)" item-start></ion-icon>
+          <ion-col>
+            <h2>{{event.title}}</h2>
+            <p>{{event.date}}</p>
+          </ion-col>
+        </ion-avatar>
+        <div class="item-body">
+        </div>
+      </ion-segment-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

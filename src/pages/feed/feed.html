@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Accueil</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let article of this.articles">
+      <ion-segment-button (ionSelect)="openDetail(article)">
+        <ion-avatar ion-row>
+          <img src="{{article.user_img}}">
+          <ion-col>
+            <h2>{{article.user_firstname}} {{article.user_lastname}}</h2>
+            <p>{{article.date_publication}}</p>
+          </ion-col>
+        </ion-avatar>
+        <div class="item-body">
+          <p>{{article.description}}</p>
+          <img src="{{article.img}}">
+          <p>
+            <a href="">{{article.nb_comment}} Commentaires</a>
+          </p>
+        </div>
+      </ion-segment-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

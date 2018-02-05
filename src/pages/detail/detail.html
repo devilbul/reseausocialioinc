@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{article.title}} </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-avatar ion-row>
+      <img src="{{article.user_img}}">
+      <ion-col>
+        <h2>{{article.user_firstname}} {{article.user_lastname}}</h2>
+        <p>{{article.date_publication}}</p>
+      </ion-col>
+    </ion-avatar>
+    <div class="item-body">
+      <p>{{article.description}}</p>
+      <img src="{{article.img}}">
+      <p>
+        <a href="">{{article.nb_comment}} Commentaires</a>
+      </p>
+    </div>
+  </ion-item>
+
+</ion-content>

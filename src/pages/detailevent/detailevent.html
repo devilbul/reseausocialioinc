@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detail Event</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-avatar ion-row>
+      <ion-icon [name]="initIcon(this.event.type)" item-start></ion-icon>
+      <ion-col>
+        <h2>{{this.event.title}}</h2>
+        <p>{{this.event.date}}</p>
+      </ion-col>
+    </ion-avatar>
+    <div class="item-body">
+      <p>{{this.event.address}}</p>
+      <button ion-button (click)="addToCalendar()" block>Ajouter à l'agenda</button>
+    </div>
+  </ion-item>
+</ion-content>
